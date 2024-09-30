@@ -1,4 +1,14 @@
-Fork from the original SAM 2 repository, using the 2.1 model with webcam.
+Fork from the [original SAM 2 repository](https://github.com/facebookresearch/sam2), using the 2.1 model with webcam.
+Also inspired by [this repository by Gy920](https://github.com/Gy920/segment-anything-2-real-time).
+
+Installation is the same as the original SAM 2.
+
+### Demo (tiny on 3090 w/ USB Cam)
+
+<div align=center>
+<p align="center">
+<img src="./assets/handwave.gif" width="880">
+</p>
 
 # SAM 2: Segment Anything in Images and Videos
 
