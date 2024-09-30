@@ -1,3 +1,5 @@
+Fork from the original SAM 2 repository, using the 2.1 model with webcam.
+
 # SAM 2: Segment Anything in Images and Videos
 
 **[AI at Meta, FAIR](https://ai.meta.com/research/)**
