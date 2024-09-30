@@ -3,6 +3,10 @@ Also inspired by [this repository by Gy920](https://github.com/Gy920/segment-any
 
 Installation is the same as the original SAM 2.
 
+To run the demo, run **my_demo.py** and **WriteCameraToImages.py** under folder **demo** simultaneously. This is designed to be a two piece program for those who are running the SAM2 main program on WSL and having trouble accessing the usb webcam. If you are having this specific setup, run the **WriteCameraToImages** one on windows, and the **my_demo.py** on WSL. Both should be ran from the root directory of the project. If you are running on a single platform, feel free to modify to put them in a single file.
+
+p.s. it is possible to get feed from usb camera in WSL, but the frame rate is much lower so not recommended. Besides, it's quite a hassle, you have to rebuild the linux kernel with additional driver.
+
 ### Demo (tiny on 3090 w/ USB Cam)
 
 <div align=center>
