@@ -4,6 +4,8 @@ import cv2
 import time
 from sam2.build_sam import build_sam2_camera_predictor
 
+import time
+
 def add_mask_overlay(frame, out_obj_ids, out_mask_logits):
     height, width = frame.shape[:2]
     # Check mask dimensions
@@ -65,6 +67,7 @@ def main():
 
     try:
         while True:
+            t0 = time.time()
             ret, frame = cap.read()
             if not ret:
                 print("Error: Can't receive frame (stream end?). Exiting ...")
@@ -81,6 +84,8 @@ def main():
                      is_tracking = False
 
             cv2.imshow('SAM2 Webcam Demo', display_frame)
+            t1 = time.time()
+            print(f"FPS: {1.0 / (t1 - t0)}")
 
             key = cv2.waitKey(1) & 0xFF
             if key == ord('q'):
